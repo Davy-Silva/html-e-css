@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* { margin: 0px; padding: 0px; }
+
+:root
+{
+    --cor1: #1FEB00;
+    --cor2: #00EB86;
+    --cor3: #00EB37;
+    --cor4: #81EB00;
+    --cor5: #00EBD6;
+
+    --font-destaque:'Lemon', serif;
+    --fonte-padrao:'Salsa', cursive;
+}
+
+header
+{
+    background-color: var(--cor3);
+    box-shadow: 0px 20px 10px black;
+}
+
+header h1
+{
+    font-family: var(--font-destaque);
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.501);
+}
+
+header p
+{
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+    padding-bottom: 25px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.501);
+}
+nav
+{
+    background-color: var(--cor3);
+    padding: 2px;
+}
+
+nav a
+{
+    text-decoration: none;
+    padding: 2px 8px;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor4);
+    border-radius: 3px;
+}
+
+nav a:hover
+{
+    background-color: white;
+    color: var(--cor3);
+    border-radius: 3px;
+}
+
+main
+{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+}
+
+main h2
+{
+    font-family: var(--font-destaque);
+    margin: 25px 20px;
+}
+
+.card
+{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 20px 30px;
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--fonte-padrao);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.615);
+}
+
+.card img
+{
+    width: 100%;
+    min-height: 50%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card h1
+{
+    font-size: 30px;
+}
+
+.card h2
+{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.711);
+    margin: 0px;
+}
+
+.card button
+{
+    background-color: var(--cor5);
+    padding: 4px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.card button:hover
+{
+    background-color: white;
+    color: var(--cor5);
+}
+
+aside
+{
+    background-color: var(--cor3);
+    padding: 20px;
+    margin: 20px 0px 40px 0px;
+    font-family: var(--font-destaque);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.529);
+}
+
+aside h2
+{
+    margin: 0px 0px 20px -20px;
+    background-image: linear-gradient(to right, white, var(--cor3));
+    padding: 5px;
+}
+
+div#video
+{
+    position: relative;
+    padding-bottom: 60%; 
+}
+
+div iframe
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer
+{
+    background-color: var(--cor5);
+    text-align: center;
+    font-family: serif;
+    padding: 3px;
+}

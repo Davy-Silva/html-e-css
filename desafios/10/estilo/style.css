@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body
+{
+    background-color: #84E1AD;
+    text-align: justify;
+}
+header
+{
+    background-image: linear-gradient(#3BD57F, #1A5C38);
+    text-align: center;
+    color: aliceblue;
+    padding: 5px 20px 5px 20px;
+    margin: -21px;
+}
+header > nav
+{
+    text-align: left;
+}
+nav > a
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+main
+{
+    background-color: rgb(255, 255, 255);
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer
+{
+    text-align: justify;
+    background-color: aliceblue;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+iframe
+{
+    margin: -3px;
+    padding: 20px 30px 20px 30px;
+    background-color: #1A5C38;
+}
+.rodape 
+{
+    background-color: #1A5C38;
+    margin: 0px;
+    padding: 0px;
+}
+#lista
+{
+    background-color: #1A5C38;
+    margin: 0px;
+    padding: 0px;
+}
+aside
+{
+    text-align: center;
+    background-color: #1A5C38;
+    color: white;
+    margin-top: 0px;
+    margin-right: -88px;
+    margin-bottom: -8px;
+    margin-left: -88px;
+}
+#rodape2
+{
+    margin: 0px;
+    padding: 0px;
+}
