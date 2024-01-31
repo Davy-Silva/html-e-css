@@ -12,9 +12,11 @@
     --font2: 'Courgette', cursive;
     --font3: 'PT Serif', serif;
 
-    --cor-1: #0e0600;
+    --cor1: #0e0600;
     --cor2: black;
     --cor3: rgb(255, 233, 32);
+    --cor4: #756A67;
+    --corfooter: #23181A;
 }
 
 *
@@ -25,8 +27,14 @@
 
 body
 {
-    background-color: var(--cor-1);
+    background-color: var(--cor1);
     color: white;
+    scroll-padding-left: 0px;
+}
+
+::-webkit-scrollbar
+{
+    width: 0px;
 }
 
 a
@@ -75,6 +83,11 @@ nav > a
     font-size: 20px;
     color: white;
     font-family: var(--font2);
+}
+
+nav a:hover
+{
+    color: var(--cor4);
 }
 
 main
@@ -154,7 +167,10 @@ button
     transform: translate(0, -50%);
 }
 
-#receitas
+button:hover
+{ background-color: var(--cor4); }
+
+#cortes
 {
     display: flex;
     flex-direction: column;
@@ -163,35 +179,107 @@ button
     margin: auto;
 }
 
-#receitas header
+#cortes header
 {
     gap: 8px;
 }
 
-#receitas h2
+#cortes h2
 {
     font-family: var(--font3);
     font-size: 32px;
     font-weight: 700;
 }
 
-#receitas > p
+#cortes > p
 {
     font: normal 16px var(--font3);
-    color: gray;
+    color: var(--cor4);
 }
 
-.container > div
+.subtitulo
 {
-    padding: 0em 10em;
+    margin-bottom: 32px;
+}
+
+#container
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em;
-
+    gap: 32px;
 }
 
-.container > div > div
+.card
 {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor2);
+    padding: 32px;
+    border-radius: 8px;
+    gap: 32px;
+    flex-basis: 29em;
+}
+
+.card > header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card > header > p
+{
+    font-size: 16px;
+    color: var(--cor4);
+}
+
+.card > div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.card img
+{
+    border-radius: 50%;
+    width: 24px;
+}
+
+.autor
+{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #C7BAB3;
+}
+
+.card-detalhes
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-detalhes > h3
+{
+    font-size: 24px;
+    color: white;
+}
+
+footer
+{
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+}
+
+aside
+{
+    color: var(--cor4);
 }
