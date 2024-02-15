@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Estados</legend>
+            <p>
+                <label for="iest">Estados</label>
+                <select name="estados" id="iest" required>
+                        <option value="">- Selecione Seu Estado -</option>
+                    <optgroup label="Estados">
+                        <option value="RJ">Rio De Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="LG">Lagoinha</option>
+                    </optgroup>
+                </select>   
+        </fieldset>
+
+        <fieldset>
+            <legend>Profissão</legend>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissao" id="iprof" list="listprof" required>
+            <datalist id="listprof">
+                <option>Jornalista</option>
+                <option>Cozinheiro</option>
+                <option>Jogador</option>
+                <option>Caçador</option>
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Redação</legend>
+            <label for="ired">Escreva Sua Redação</label>
+            <br>
+            <textarea name="redacao" id="ired" cols="30" rows="10" required></textarea>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

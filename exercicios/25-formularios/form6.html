@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <h1>Teste</h1>
+
+    
+        <form action="cadastro.php" method="get" autocomplete="on">
+
+            <fieldset>
+                <legend>Cores Favoritas</legend>
+                <p>
+                    <label for="icor">Cor</label>
+                    <input type="color" name="cor" id="icor" required value="#0000ff">
+                </p>
+                <p>
+                    <label for="isatis">Satisfação</label>
+                    <input type="range" name="satisfacao" id="isatis" >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fotos</legend>
+                <p>
+                    <label for="ifoto">Foto Do Perfil</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+    
+</body>
+</html>
