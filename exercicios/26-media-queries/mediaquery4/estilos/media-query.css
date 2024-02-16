@@ -1,2 +1,48 @@
 @charset "UTF-8";
 
+@media print
+{
+    * { font-family: 'Courier New', Courier, monospace; }
+
+    main
+    { border: 2px solid black; }
+
+    main::after
+    {
+        content: 'Esse site foi impresso do exercício 26 do curso de HTML e CSS do Cursoemvideo. Feito por Davy Silva';
+    }
+
+    main h1 
+    {
+        color: black;
+        text-shadow: none;
+    }
+
+    #phone { display: none; }
+    #print { display: block; }
+
+}
+
+@media screen and (min-width: 768px)
+{
+    body { background-image: url(../imagens/back-tablet.jpg); }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+}
+
+@media screen and (min-width: 992px)
+{
+    body { background-image: url(../imagens/back-tablet.jpg); }
+
+    #tablet { display: none; }
+    #pc { display: block; }
+}
+
+@media screen and (min-width: 1200px)
+{
+    body { background-image: url(../imagens/back-tv.jpg); }
+
+    #pc { display: none; }
+    #tv { display: block; }
+}
