@@ -24,19 +24,19 @@
 
                 <form action="login.php" method="post" autocomplete="on">
 
-                    <p>
-                        <label for="iname" class="label">1</label>
-                        <input type="text" name="name" id="iname">
-                    </p>    
-                    <p>
-                        <label for="isenha" class="label">2</label>
-                        <input type="password" name="senha" id="isenha">
-                    </p>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" name="name" id="iname" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="iname" class="label">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
                     
-                    <p> <input type="submit" value="Enviar" id="botao-enviar" class="botoes"> </p>   
-                    <p> 
-                        <input type="" value="Esqueci minha senha" id="botao-senha" class="botoes">
-                    <p>
+                    <input type="submit" value="Enviar" class="botoes">
+                    <input type="reset" value="Esqueci minha senha" class="botoes">
                    
                 </form>
 

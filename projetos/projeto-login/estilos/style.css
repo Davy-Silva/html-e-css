@@ -74,42 +74,50 @@ main
 }
 
 form
-{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+{ text-align: center; }
 
-form > p > input
+form label
+{ display: none; }
+
+.campo
 {
-    margin: 5px;
+    display: block;
+    text-align: center;
+    background-color: var(--lilas);
+    width: 80%;
+    height: 40px;
+    margin: 15px auto;
     border-radius: 5px;
-    border: 2px solid var(--lilas);
 }
 
 .botoes
 {
-    text-align: center;
     width: 80%;
     height: 25px;
     border: 1px solid var(--verde);
+    margin: 5px;
+    border-radius: 5px;
 }
 
-#botao-enviar
+form input[type=submit]
 {
     color: white;
     background-color: var(--verde);
 }
+form input[type=submit]:hover
+{
+    cursor: pointer;
+    background-color: green
+}
 
-#botao-senha
+form input[type=reset]
 {
     color: var(--verde);
     background-color: white;
 }
-
-.label
+form input[type=reset]:hover
 {
+    cursor: pointer;
     color: white;
-    background-color: var(--lilas);
-    padding: 10px;
+    background-color: green;
 }
