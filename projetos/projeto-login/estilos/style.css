@@ -38,6 +38,7 @@ main
     height: 500px;
     overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.56);
+    transition: width 0.5s, height 0.5s;
 }
 
 #login > #img

@@ -1,10 +1,46 @@
 @charset "UTF-8";
 
-* { margin: 0px; padding: 0px; }
-
 :root
 {
     --verde: #49a09d;
     --lilas: #5f2c82;
+}
+
+@media screen and (min-width: 768px)
+{
+    body { background-image: linear-gradient(to top, var(--verde), var(--lilas)); }
+    #login
+    { width: 85vw; }
+    #login > #img
+    {
+        float: right;
+        width: 30%;
+        height: 100%;
+    }
+    #login > #img
+    {
+        float: left;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    #login
+    { max-width: 990; }
+    #login > #img
+    {
+        width: 50%;
+        height: 100%;
+    }
+    #login > #img
+    {
+        width: 50%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1200px)
+{
 
 }
