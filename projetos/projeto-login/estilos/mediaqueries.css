@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 768px)
 {
+    
     body { background-image: linear-gradient(to top, var(--verde), var(--lilas)); }
     #login
     { width: 85vw; }
@@ -23,12 +24,36 @@
         width: 70%;
         height: 100%;
     }
-    .botoes
+    #formulario > h1
+    {
+        margin: 20px auto;
+        font-size: 32px;
+    }
+    #formulario > p
+    {
+        margin: 25px 10px;
+        font-size: 16px;
+    }
+    div.campo
+    { margin: 30px auto; }
+    div#campo1
+    {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    div#campo2
+    { margin-top: 10px; }
+    input.botoes
     {
         width: 70%;
         height: 30px;
         font-weight: bolder;
+        margin: 20px auto;
     }
+    input#botao1
+    { margin-bottom: 10px; }
+    input#botao2
+    { margin-top: 10px; }
 }
 
 @media screen and (min-width: 992px)
@@ -40,7 +65,7 @@
     #login > #formulario
     { width: 50%; }
     #formulario > p
-    { font-size: 16px; }
+    { margin: 25px 25px; }
 }
 @media screen and (min-width: 1200px)
 {

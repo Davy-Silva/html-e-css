@@ -79,18 +79,43 @@ form
 form label
 { display: none; }
 
-.campo
+div.campo
 {
     display: block;
     text-align: center;
     background-color: var(--lilas);
+    border: 2px solid var(--lilas);
     width: 80%;
     height: 40px;
     margin: 15px auto;
     border-radius: 5px;
 }
 
-.botoes
+div.campo span
+{
+    color: white;
+    font-size: 32px;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input
+{
+    font-size: 16px;
+    width: calc(100% - 45px);
+    height: 100%;   
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+div.campo input:hover
+{
+    cursor: pointer;
+}
+
+input.botoes
 {
     width: 80%;
     height: 25px;
@@ -99,25 +124,21 @@ form label
     border-radius: 5px;
 }
 
+input.botoes:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: green;
+}
+
 form input[type=submit]
 {
     color: white;
     background-color: var(--verde);
-}
-form input[type=submit]:hover
-{
-    cursor: pointer;
-    background-color: green
 }
 
 form input[type=reset]
 {
     color: var(--verde);
     background-color: white;
-}
-form input[type=reset]:hover
-{
-    cursor: pointer;
-    color: white;
-    background-color: green;
 }
