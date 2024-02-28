@@ -1,3 +1,3 @@
-# HTML e CSS
+# HTML5 e CSS3
 
-Repositório Do Curso De HTML e CSS Do Cursoemvideo.
+Repositório De Exercícios Do Curso De HTML5 e CSS3 Do Cursoemvideo.
