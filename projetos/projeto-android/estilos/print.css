@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body
+{ font-family: monospace; 
+    
+}
+
+header, #container-video, #article2, #article3, footer
+{ display: none; }
+
+
+{ content: 'O material desse site foi feito por Gustavo Guanabara do Cursoemvideo, e refeito como exercício por Davy Silva'; }
