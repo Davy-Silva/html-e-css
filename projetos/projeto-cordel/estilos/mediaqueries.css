@@ -2,9 +2,70 @@
 
 @media screen and (min-width: 600px)
 {
+    header > h1
+    {
+        font-size: 40px;
+    }
+
     main > article > p, #img1 > p, #img2 > p
     {
         font-size: 20px;
+        width: 250px;
+    }
+
+    body > footer
+    {
+        width: 100vw;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    main > article > p, #img1 > p, #img2 > p
+    {
+        font-size: 22px;
+        line-height: 40px;
+        width: 300px;
+    }
+
+    #img1, #img2
+    {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    body > header
+    {
+        height: 170px;
+        padding-top: 20px;
+    }
+
+    header > h1
+    {
+        font-size: 50px;
+    }
+
+    header > p
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    header > h1
+    {
+        font-size: 60px;
+    }
+
+    main > article > p, #img1 > p, #img2 > p
+    {
+        font-size: 26px;
+        line-height: 50px;
+        width: 350px;
     }
 
 }
