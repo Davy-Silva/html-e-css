@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px)
+{
+    main > article > p, #img1 > p, #img2 > p
+    {
+        font-size: 20px;
+    }
+
+}
